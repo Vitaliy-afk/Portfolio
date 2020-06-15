@@ -1,0 +1,242 @@
+//*SLIDER-SECTION*//
+.slider-section {
+	background-color: #F6F6F6;
+    .container{
+		align-items: center;
+    }
+}
+.name-header {
+    h1 {
+		font-weight: 100;
+		letter-spacing: 1px;
+        text-align: center;
+        color: #666666;
+        padding: 78px 0 0 0;
+        max-width: 400px;
+        margin: 0 auto 40px;
+        @include media('>=320px') {
+            font-size: 25px;
+            
+        }
+        @include media('>=768px') {
+            font-size: 35px;
+        }
+	}
+}
+
+.center-key {
+    text-align: center;
+    padding: 30px 0px 30px 0;
+	.key {
+        color: $black;
+        text-decoration: none;
+        font-weight: 100;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 52px;
+        min-width: 200px;
+        border-radius: 22px;
+        cursor: pointer;
+        font-size: 17px;
+        letter-spacing: 0.2em;
+        background-color: $white;
+        text-decoration: none;
+        padding: 0 10px;
+        transition: 2s;
+        border: 2px solid #FDDCC4;
+	}
+}
+.key:hover {
+    background-color: #FDDCC4;
+    transform: scale(1.1);
+}
+
+
+
+.slider-block {
+    position: relative;
+    padding: 0 60px;
+    min-height: 100px;
+}
+
+.slider-block .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1001;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+
+.slick-list {
+    text-align: center;
+    @include media('>=768px') {
+        min-height: 300px;
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    @include media('>=320px') {
+        min-height: 300px;
+    }
+}
+
+.slider-block .slick-arrow.slick-prev {
+    left: 0;
+    background: url('/image/prev.png');
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $white;
+}
+
+
+.slider-block .slick-arrow.slick-prev:hover {
+    transition: 0.1s;
+    background-color: #FDDCC4;
+}
+
+
+.slider-block .slick-arrow.slick-next:hover {
+    transition: 0.1s;
+    background-color: #FDDCC4;
+}
+
+
+.slider-block .slick-arrow.slick-next {
+    right: 0;
+    background: url('/image/next.png');
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $white;
+}
+
+
+.slider-block .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    @include media('>=768px') {
+        margin: 0 auto;
+    }
+}
+
+
+.slider-block .slick-dots li {
+    list-style-type: none;
+    margin: 0 5px;
+
+}
+
+.slider-block .slick-dots button {
+    width: 10px;
+    height: 10px;
+    background-color: #cc9f9f;
+    border-radius: 50%;
+    font-size: 0;
+    border: none;
+}
+
+
+.slider__item img {
+    text-align: center;
+    align-items: center;
+}
+
+
+.slider__item  {
+    max-width: 265px;
+    background-position: center;
+    border-radius: 5%;
+    .push {
+        color: $black;
+        text-decoration: none;
+        font-weight: 100;
+        background-color: $white;
+        border-radius: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 2s;
+        border: 2px solid #FDDCC4;
+        @include media('>=320px') {
+            font-size: 15px;
+            height: 50px;
+            width: 150px;
+        }
+        @include media('>=768px') {
+            font-size: 17px;
+            height: 50px;
+            width: 180px;
+        }
+    }
+}
+.push:hover {
+    background-color: #FDDCC4;
+}
+
+
+.klick {
+    text-align: center;
+    width: 25%;
+    background-color: $white;
+    transition: 1s;
+    @include media('>=320px') {
+        min-height: 300px;
+    }@include media('>=768px') {
+        min-height: 425px;
+    }
+}
+
+
+.klick:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+}
+
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}

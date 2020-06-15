@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Porfolio</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container navbar">
+			<header>
+				<div class="lgo">
+					<h1>Vitaliy</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a class="hover" href="#about">about me</a></li>
+						<li><a class="hover" href="#skills">skills</a></li>
+						<li><a class="hover" href="#work">my work</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="container main-info-section">
+			<div class="text position">
+				<h1>
+					<span>H</span>
+					<span class="m-left">i</span>
+					<span class="m-left">,</span>
+					<br>
+					<span class="m-left">I</span>
+					<span class="m-left">'</span>
+					<span class="m-left">m</span>
+					<span class="name">V</span>
+					<span class="m-left name">i</span>
+					<span class="m-left name">t</span>
+					<span class="m-left name">a</span>
+					<span class="m-left name">l</span>
+					<span class="m-left name">i</span>
+					<span class="m-left name">y</span>
+					<span class="m-left">,</span>
+					<br>
+					<span>W</span>
+					<span class="m-left">e</span>
+					<span class="m-left">b</span>
+					<span>D</span>
+					<span class="m-left">e</span>
+					<span class="m-left">s</span>
+					<span class="m-left">i</span>
+					<span class="m-left">g</span>
+					<span class="m-left">n</span>
+					<span class="m-left">e</span>
+					<span class="m-left">r</span>
+					<span class="m-left">.</span>
+				</h1>
+				<p>HTML / CSS / Javascript</p>
+				<a href="#contact">contact me</a>
+			</div>
+			<div class="profile-image position">
+				<img src="./assets/img/photo3.png" alt="image description">
+			</div>
+			<div class="my-history">
+				<p><p>One day, I was visiting my friend and saw how he wrote 
+					code that was not clear to me. Over time, I learned that it was HTML, 
+					and I had no idea that this was the simplest thing that could be in programming. 
+					Over time, I began to realize that it was interesting to me, and 
+					I want to devote myself to this business. And as it turned out, 
+					all my life I was doing the wrong thing, and all my previous work experience
+					 did not bring me real pleasure, but now I know what is really mine.</p></p>
+			</div>
+		</div>
+		<div class="container about" id="about">
+			<h1>About</h1>
+			<div class="about-me-info">
+				<p>One day, I was visiting my friend and saw how he wrote 
+					code that was not clear to me. Over time, I learned that it was HTML, 
+					and I had no idea that this was the simplest thing that could be in programming. 
+					Over time, I began to realize that it was interesting to me, and 
+					I want to devote myself to this business. And as it turned out, 
+					all my life I was doing the wrong thing, and all my previous work experience
+					 did not bring me real pleasure, but now I know what is really mine.</p>
+			</div>
+			<img src="./assets/img/dotted-shape.png" alt="image description">
+		</div>
+		<div class="container skills" id="skills">
+			<h1>Skills</h1>
+			<p class="skills-info">Lorem ipsum dolor sit amet consectetur 
+				adipisicing elit. Doloremque, exercitationem?</p>
+			<div class="skillbar clearfix " data-percent="60%">
+				<div class="skillbar-title" style="background: #d35400;"><span>HTML</span></div>
+				<div class="skillbar-bar" style="background: #e67e22;"></div>
+			<div class="skill-bar-percent">60%</div>
+			</div>
+			<div class="skillbar clearfix " data-percent="60%">
+				<div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+				<div class="skillbar-bar" style="background: #3498db;"></div>
+			<div class="skill-bar-percent">60%</div>
+			</div>
+			<div class="skillbar clearfix " data-percent="20%">
+				<div class="skillbar-title" style="background: #2c3e50;"><span>Javascript</span></div>
+				<div class="skillbar-bar" style="background: #2c3e50;"></div>
+				<div class="skill-bar-percent">20%</div>
+			</div>
+			<div class="skillbar clearfix " data-percent="25%">
+				<div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
+				<div class="skillbar-bar" style="background: #525252;"></div>
+				<div class="skill-bar-percent">25%</div>
+			</div>
+			<div class="skillbar clearfix " data-percent="50%">
+				<div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+				<div class="skillbar-bar" style="background: #4288d0;"></div>
+				<div class="skill-bar-percent">50%</div>
+			</div>
+		</div>
+		<div class="container work" id="work">
+			<h1>Work</h1>
+			<div class="work-category">
+				<button id="designing" class="active" onclick="showRequiredCategory(this)">Web Designer</button>
+				<button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
+				<button id="project" onclick="showRequiredCategory(this)">React Projects</button>
+			</div>
+			<div class="category-designing showCategory">
+				<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
+				<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
+				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
+			</div>
+			<div class="category-animation hideCategory">
+				<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
+				<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
+				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
+				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
+			</div>
+			<div class="category-project hideCategory">
+				<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
+				<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
+				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
+			</div>
+		</div>
+		<div class="container contact" id="contact">
+			<h1>Contact</h1>
+			<form>
+				<input type="text" name="name" placeholder="Full name">
+				<input type="email" placeholder="Email">
+				<input type="email" placeholder="escapefromtarkov28@gmail.com" disabled>
+				<textarea name="message" cols="30" rows="10" placeholder="Messege"></textarea>
+				<input type="submit">
+			</form>
+		</div>
+		<footer id="footer">
+			<hr>
+			<p>2020 Copyrught. All Rights Reserved</p>
+		</footer>
+	</div>
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/animation.gsap.min.js"></script>
+	<script src="/assets/js/CSSPlugin.min.js"></script>
+	<script src="/assets/js/ScrollMagic.min.js"></script>
+	<script src="/assets/js/Timelinelite.min.js"></script>
+	<script src="/assets/js/TweenMax.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script src="/assets/js/jquery.main.js" defer></script>
+	<script src="/assets/js/script.js" defer></script>
+
+	
+</body>
+</html>

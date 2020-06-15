@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadProRegular.eot');
+    src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'),
+         url('../fonts/MyriadProRegular.woff2') format('woff2'),
+         url('../fonts/MyriadProRegular.woff') format('woff'),
+         url('../fonts/MyriadProRegular.ttf') format('truetype'),
+         url('../fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url("../fonts/Gotham-Book.woff");
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/Gotham-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/Gotham-Light.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("../fonts/Gotham-Medium.woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_RobotoCondensed-Bold';
+	src: url("../fonts/RobotoCondensed-Bold.eot");
+	src: local('☺'), url("../fonts/RobotoCondensed-Bold.woff") format('woff') ;
+	font-weight: 700;
+	font-style: normal;
+}
