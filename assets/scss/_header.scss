@@ -17,11 +17,13 @@
 
 .lgo {
 	width: 50%;
+	padding: 0 15px;
 }
 
 
 .header-block {
 	display: flex;
+	margin: 0 -15px;
 }
 
 
@@ -46,6 +48,7 @@ nav ul,
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding-bottom: 44px;
 }
 
 body {
@@ -70,6 +73,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	padding: 0 15px;
 
 }
 
