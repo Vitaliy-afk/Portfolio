@@ -18,14 +18,17 @@ $media-expressions: (
 );
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import 'common';
 @import 'variables';
 @import 'include-media';
 @import 'helpers';
 @import 'header';
+@import 'normalize';
 @import 'about';
 @import 'skills';
 @import 'mixins';
 @import 'footer';
+@import 'animate';
 
 
 
@@ -45,17 +48,24 @@ html {
 
 
 .main-info-section {
-	
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	padding-bottom: 175px;
+	letter-spacing: -3px;
+	padding-top: 50px;
+	@include media('>768px'){
+		display: flex;
+	}
 }
 
 
 .text {
-	margin-top: 120px;
+	
 }
 
 .text h1 {
 	color: white;
-	font-size: 3rem;
+	font-size: 2rem;
 	cursor: context-menu;
 }
 
@@ -74,10 +84,10 @@ span.name {
 	color: #ed5565;
 }
 
-span.m-left {
-	margin-left: -10px;
+.text {
+	width: 50%;
+	padding: 0 15px;
 }
-
 
 .text p {
 	letter-spacing: 3px;
@@ -123,27 +133,41 @@ span.m-left {
 }
 
 
+
+
 .profile-image img {
-	width: 850px;
-	margin-top: 50px;
 	transition: 3s;
-	background-image: url(/assets/img/background-image.jpg);
 	background-repeat: no-repeat;
-	opacity: 96%;
+	opacity: 90%;
 	border-radius: 10%;
 	border: 2px solid black;
-	box-shadow: 0 0px 200px rgba(0,0,0,1);
-	
+	box-shadow: 0 0px 100px black;
+	width: 100%;
+	display: flex;
+	max-height: 675px;
+	background-image: url(/assets/img/background-image.jpg);
 	
 }
+
+.profile-image {
+	width: 50%;
+	padding: 0 15px;
+
+}
+
 
 
 .profile-image img:hover {
-	transform: scale(1.1);
-	transform: rotate(360deg);
-	transform-origin: 50% 50%;
+	// transform: scale(1.1);
+	// transform: rotate(360deg);
+	// transform-origin: 50% 50%;
 }
 
+// .position {
+// 	margin: 0 auto;
+// 	max-width: 1000px;
+// 	min-height: 300px;
+// }
 
 
 
@@ -166,6 +190,11 @@ div[class^='category-'] {
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	grid-gap: 20px;
 }
+
+.work {
+	padding-bottom: 100px;
+}
+
 
 .work a {
 	justify-self: center;
@@ -215,6 +244,8 @@ form textarea {
 	right: 50%;
 	transform: translateX(-50%);
 }
+
+
 
 form input:last-child {
 	width: 200px;

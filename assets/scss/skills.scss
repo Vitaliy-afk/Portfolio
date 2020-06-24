@@ -1,5 +1,5 @@
 .skills {
-	height: 100vh;
+	padding-bottom: 70px;
 }
 
 .skills h1,
@@ -7,18 +7,19 @@
 	text-align: right;
 	font-size: 10rem;
 	opacity: .1;
+	margin: 0;
 }
 
-.skills-info {
-	font-size: 1.4rem;
-	max-width: 800px;
-	color: #bebebe;
-	position: relative;
-	left: 50%;
-	right: 50%;
-	text-align: center;
-	margin-bottom: 50px;
-}
+// .skills-info {
+// 	font-size: 1.4rem;
+// 	max-width: 800px;
+// 	color: #bebebe;
+// 	position: relative;
+// 	left: 50%;
+// 	right: 50%;
+// 	text-align: center;
+// 	margin-bottom: 50px;
+// }
 
 
 .html {
@@ -51,8 +52,8 @@ div[class^='tag-'] p {
 
 .progressbar {
 	position: relative;
-	width: 600px;
-	height: 18px;
+	width: 535px;
+	height: 20px;
 	border: 2px solid #48cfad;
 	border-radius: 20px;
 	margin-top: 7px;
@@ -66,9 +67,3 @@ div[class^='bar-'] {
 	margin: 2.7px;
 }
 
-.bar-html,
-.bar-css,
-.bar-javascript,
-.bar-react {
-	width: calc(0 - 6px);
-}

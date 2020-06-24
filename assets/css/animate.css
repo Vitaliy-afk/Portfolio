@@ -230,7 +230,7 @@
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
-}
+} 
 
 @-webkit-keyframes shake {
   from,
@@ -3227,7 +3227,7 @@
 }
 
 @-webkit-keyframes zoomOutRight {
-  40% {
+  20% {
     opacity: 1;
     -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
     transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);

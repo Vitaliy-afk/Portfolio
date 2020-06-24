@@ -6,150 +6,169 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Porfolio</title>
 	<script src="https://kit.fontawesome.com/1efa8c618a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<div id="wrapper">
-		<div class="container navbar">
-			<header>
-				<div class="lgo">
-					<h1 class="circle">Vitaliy</h1>
-				</div>
-				<nav>
-					<ul>
-						<li><a class="hover" href="#about">about me</a></li>
-						<li><a class="hover" href="#skills">skills</a></li>
-						<li><a class="hover" href="#work">my work</a></li>
-					</ul>
-				</nav>
-			</header>
-		</div>
-		<div class="container main-info-section">
-			<div class="text position">
-				<h1>
-					<span>H</span>
-					<span class="m-left">i</span>
-					<span class="m-left">,</span>
-					<br>
-					<span class="m-left">I</span>
-					<span class="m-left">'</span>
-					<span class="m-left">m</span>
-					<span class="name">V</span>
-					<span class="m-left name">i</span>
-					<span class="m-left name">t</span>
-					<span class="m-left name">a</span>
-					<span class="m-left name">l</span>
-					<span class="m-left name">i</span>
-					<span class="m-left name">y</span>
-					<span class="m-left">,</span>
-					<br>
-					<span>W</span>
-					<span class="m-left">e</span>
-					<span class="m-left">b</span>
-					<span>D</span>
-					<span class="m-left">e</span>
-					<span class="m-left">s</span>
-					<span class="m-left">i</span>
-					<span class="m-left">g</span>
-					<span class="m-left">n</span>
-					<span class="m-left">e</span>
-					<span class="m-left">r</span>
-					<span class="m-left">.</span>
-				</h1>
-				<p>HTML / CSS / Javascript</p>
-				<a href="#contact">contact me</a>
-			</div>
-			<div class="profile-image position">
-				<img src="/assets/img/photo3.png" alt="image description">
-			</div>
-		</div>
-		<div class="container about" id="about">
-			<h1>About</h1>
-			<div class="about-me-info">
-				<p>One day, I was visiting my friend and saw how he wrote 
-					code that was not clear to me. Over time, I learned that it was <mark>HTML</mark>,
-					and I had no idea that this was the simplest thing that could be in programming. 
-					Over time, I began to realize that it was interesting to me, and 
-					I want to devote myself to this. And as it turned out, 
-					all my life I was doing the wrong thing, and all my previous work experience
-					 did not bring me real pleasure, but now I know what is really mine.</p>
-			</div>
-			<img src="./assets/img/dotted-shape.png" alt="image description">
-		</div>
-		<div class="container skills" id="skills">
-			<h1>Skills</h1>
-			<p class="skills-info"></p>
-			<div class="html">
-				<div class="tag-html">
-					<p>HTML</p>
-				</div>
-				<div class="progressbar">
-					<div class="bar-html"></div>
+		<header>
+			<div class="container">
+				<div class="header-block">
+					<div class="lgo">
+						<h1 class="circle klick"></h1>
+					</div>
+					<div class="navbar">
+						<ul class="menu">
+							<li><a class="hover" href="#about">about me</a></li>
+							<li><a class="hover" href="#skills">skills</a></li>
+							<li><a class="hover" href="#work">my work</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="html">
-				<div class="tag-css">
-					<p>CSS</p>
+		</header>
+		<div class="container">
+			<div class="main-info-section">
+				<div class="text">
+					<h1>
+						<span>H</span>
+						<span >i</span>
+						<span >,</span>
+						<br>
+						<span >I</span>
+						<span >'</span>
+						<span >m</span>
+						<span class="name">V</span>
+						<span class="name">i</span>
+						<span class="name">t</span>
+						<span class="name">a</span>
+						<span class="name">l</span>
+						<span class="name">i</span>
+						<span class="name">y</span>
+						<span>,</span>
+						<br>
+						<span>W</span>
+						<span>e</span>
+						<span>b</span>
+						<span>D</span>
+						<span >e</span>
+						<span >v</span>
+						<span>e</span>
+						<span>l</span>
+						<span>o</span>
+						<span>p</span>
+						<span>e</span>
+						<span>r</span>
+					</h1>
+					<p>HTML / CSS / Javascript</p>
+					<a href="#contact">contact me</a>
 				</div>
-				<div class="progressbar">
-					<div class="bar-css"></div>
-				</div>
-			</div>
-			<div class="html">
-				<div class="tag-java">
-					<p>Javascript</p>
-				</div>
-				<div class="progressbar">
-					<div class="bar-javascript"></div>
-				</div>
-			</div>
-			<div class="html">
-				<div class="tag-react">
-					<p>React</p>
-				</div>
-				<div class="progressbar">
-					<div class="bar-react"></div>
+				<div class="profile-image">
+					<img src="/assets/img/photo4.png" alt="image description">
 				</div>
 			</div>
 		</div>
-		<div class="container work" id="work">
-			<h1>Work</h1>
-			<div class="work-category">
-				<button id="designing" class="active" onclick="showRequiredCategory(this)">Web Designer</button>
-				<button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
-				<button id="project" onclick="showRequiredCategory(this)">React Projects</button>
-			</div>
-			<div class="category-designing showCategory">
-				<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
-				<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
-				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
-			</div>
-			<div class="category-animation hideCategory">
-				<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
-				<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
-				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
-				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
-			</div>
-			<div class="category-project hideCategory">
-				<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
-				<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
-				<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
+		<div class="container">
+			<div class="about-section" id="about">
+				<ul>
+					<li>
+						<h1>About</h1>
+					</li>
+					<li>
+						<div class="about-me-info">
+							<p>One day, I was visiting my friend and saw how he wrote 
+							code that was not clear to me. Over time, I learned that it was <mark>HTML</mark>,
+							and I had no idea that this was the simplest thing that could be in programming. 
+							Over time, I began to realize that it was interesting to me, and 
+							I want to devote myself to this. And as it turned out, 
+							all my life I was doing the wrong thing, and all my previous work experience
+						 	did not bring me real pleasure, but now I know what is really mine.</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="container contact" id="contact">
-			<h1>Contact</h1>
-			<form>
-				<input type="text" name="name" placeholder="Full name">
-				<input type="email" placeholder="Email">
-				<input type="email" placeholder="escapefromtarkov28@gmail.com" disabled>
-				<textarea name="message" cols="30" rows="10" placeholder="Messege"></textarea>
-				<input type="submit">
-			</form>
+		<div class="container">
+			<div class="skills" id="skills">
+				<h1>Skills</h1>
+				<p class="skills-info"></p>
+				<div class="html">
+					<div class="tag-html">
+						<p>HTML</p>
+					</div>
+					<div class="progressbar">
+						<div class="bar-html" aria-valuenow="0" aria-valuemax="100"></div>
+						<span id="current-progress"></span>
+					</div>
+				</div>
+				<div class="html">
+					<div class="tag-css">
+						<p>CSS</p>
+					</div>
+					<div class="progressbar">
+						<div class="bar-css"></div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="tag-java">
+						<p>Javascript</p>
+					</div>
+					<div class="progressbar">
+						<div class="bar-javascript"></div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="tag-react">
+						<p>React</p>
+					</div>
+					<div class="progressbar">
+						<div class="bar-react"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="work" id="work">
+				<h1>Work</h1>
+				<div class="work-category">
+					<button id="designing" class="active" onclick="showRequiredCategory(this)">Web Developer</button>
+					<button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
+					<button id="project"  onclick="showRequiredCategory(this)">React Projects</button>
+				</div>
+				<div class="category-designing showCategory">
+					<a href="https://modest-hugle-01c4c4.netlify.app"><img src="./assets/img/internet-shop.png" alt="image description"></a>
+					<a href="https://peaceful-villani-01a9cc.netlify.app/"><img src="./assets/img/blog-template.png" alt="image description"></a>
+					<a href="https://peaceful-villani-01a9cc.netlify.app/post.html"><img src="./assets/img/blog-template2.png" alt="image description"></a>
+				</div>
+				<div class="category-animation hideCategory">
+					<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
+					<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
+					<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
+				</div>
+				<div class="category-project hideCategory">
+					<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
+					<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
+					<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
+					<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="contact" id="contact">
+				<h1>Contact</h1>
+				<form>
+					<input type="text" name="name" placeholder="Full name">
+					<input type="email" placeholder="Email">
+					<input type="email" placeholder="vitaliy.z125bpm@gmail.com" disabled>
+					<textarea name="message" cols="30" rows="10" placeholder="Messege"></textarea>
+					<input type="submit">
+				</form>
+			</div>
 		</div>
 		<footer id="footer">
 			<hr>
-			<p>2020 Copyrught. All Rights Reserved</p>
+			<div class="container">
+				<p>2020 Copyrught. All Rights Reserved</p>
+			</div>
 		</footer>
 	</div>
 	<script src="./assets/js/ScrollMagic.min.js"></script>
@@ -157,6 +176,6 @@
     <script src="./assets/js/TimelineLite.min.js"></script>
     <script src="./assets/js/TweenMax.min.js"></script>
     <script src="./assets/js/CSSPlugin.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+	<script src="./assets/js/main.js"></script>
 </body>
 </html>
