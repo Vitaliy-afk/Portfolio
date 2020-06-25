@@ -22,7 +22,7 @@ t1.fromTo(htmlBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(75% - 6px)', ea
 const controller = new ScrollMagic.Controller()
 const scene = new ScrollMagic.Scene({
     triggerElement: '.skills',
-    triggerHook: 0
+    triggerHook: 0.5
 })
 
 

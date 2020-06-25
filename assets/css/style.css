@@ -113,7 +113,7 @@ nav ul,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 63px;
+  padding-bottom: 50px;
 }
 
 body {
@@ -613,7 +613,7 @@ th {
 }
 
 .about-section {
-  padding-bottom: 58px;
+  padding-bottom: 46px;
 }
 
 #about {
@@ -627,7 +627,7 @@ th {
   opacity: .1;
   color: #fff;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 
 .about-section ul {
@@ -4155,7 +4155,7 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -15px;
-  padding-bottom: 270px;
+  padding-bottom: 300px;
   letter-spacing: -3px;
   padding-top: 50px;
 }
