@@ -11,6 +11,9 @@
 	height: 50px;
 	background: white;
 	border-radius: 80%;
+	@include media('<1024px'){
+		display: none;
+	}
 	
 }
 
@@ -37,7 +40,7 @@
 		visibility: visible;
     }
     @include media('>1024px'){
-        display:none;
+        display: none;
     }
     .burger-active &{
         @include media('<1024px'){
@@ -97,13 +100,17 @@ header {
 	align-items: center;
 	justify-content: flex-end;
 	padding: 0 15px;
+	@include media('<780px'){
+		position: absolute;
+		
+	}
 	.burger-active & {
 		@include media('<1024px'){
 			background-color: #333;
 			visibility: visible;
         	width: 100%;
         	position: absolute;
-        	top: 78%;
+        	top: 100%;
         	display: flex;
 			justify-content: space-around;
 			
@@ -113,7 +120,6 @@ header {
 			background-color: #333;
 			display: inline-block;
 			width: 100%;
-			transition: 1s;
 		}
 	}
 }
