@@ -137,16 +137,17 @@ header {
 }
 
 .navbar {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 65%;
   padding: 0 15px;
 }
 
@@ -4350,6 +4351,23 @@ form input:last-child {
   }
 }
 
+@media (min-width: 1024px) {
+  .navbar {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 15px;
+    position: static;
+  }
+}
+
 @media (min-width: 1025px) {
   .burger-wrap {
     display: none;
@@ -4386,14 +4404,14 @@ form input:last-child {
   }
   .burger-active .burger-wrap {
     opacity: 1;
-    visibility: visible;
+  }
+  header {
+    height: 100px;
   }
   .burger-active .navbar {
-    background-color: #333;
+    background-color: #181818;
     visibility: visible;
-    width: 100%;
-    position: absolute;
-    top: 100%;
+    top: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4420,9 +4438,6 @@ form input:last-child {
     width: 100%;
     display: inline-block;
     visibility: visible;
-  }
-  .navbar {
-    position: absolute;
   }
 }
 
@@ -4492,8 +4507,7 @@ form input:last-child {
 @media (max-width: 320px) {
   .burger-active .navbar {
     visibility: visible;
-    background-color: #333;
-    display: inline-block;
+    background-color: #181818;
     width: 100%;
   }
   a {
