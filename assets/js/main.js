@@ -17,7 +17,7 @@ var t1 = new TimelineLite()
 t1.fromTo(htmlBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(75% - 6px)', ease: Power4.easeOut})
     .fromTo(cssBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(70% - 6px)', ease: Power4.easeOut})
     .fromTo(jsBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(75% - 6px)', ease: Power4.easeOut})
-    .fromTo(reactBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(70% - 6px)', ease: Power4.easeOut})
+    // .fromTo(reactBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(70% - 6px)', ease: Power4.easeOut})
 
 const controller = new ScrollMagic.Controller()
 const scene = new ScrollMagic.Scene({
