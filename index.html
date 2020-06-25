@@ -16,6 +16,9 @@
 					<div class="lgo">
 						<h1 class="circle klick"></h1>
 					</div>
+					<div class="burger-wrap">
+						<a href="#" class="burger"></a>
+					</div>
 					<div class="navbar">
 						<ul class="menu">
 							<li><a class="hover" href="#about">about me</a></li>
@@ -130,9 +133,9 @@
 			<div class="work" id="work">
 				<h1>Work</h1>
 				<div class="work-category">
-					<button id="designing" class="active" onclick="showRequiredCategory(this)">Web Developer</button>
-					<button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
-					<button id="project"  onclick="showRequiredCategory(this)">React Projects</button>
+					<button id="designing" class="active grid" onclick="showRequiredCategory(this)">Web Developer</button>
+					<button id="animation"class="grid" onclick="showRequiredCategory(this)">Web Animation</button>
+					<button id="project" class="grid" onclick="showRequiredCategory(this)">React Projects</button>
 				</div>
 				<div class="category-designing showCategory">
 					<a href="https://modest-hugle-01c4c4.netlify.app"><img src="./assets/img/internet-shop.png" alt="image description"></a>
@@ -171,6 +174,8 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/jquery.main.js"></script>
 	<script src="./assets/js/ScrollMagic.min.js"></script>
     <script src="./assets/js/animation.gsap.min.js"></script>
     <script src="./assets/js/TimelineLite.min.js"></script>

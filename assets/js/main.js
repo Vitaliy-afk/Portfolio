@@ -53,4 +53,17 @@ function showRequiredCategory(event) {
     getCategory.classList.add('showCategory');
 }
 
-console.log(2234);
+jQuery( document ).ready(function() {
+    initBurgerMenu();
+    
+});
+
+
+function initBurgerMenu() {
+    jQuery('.burger').on('click', function(e){
+        e.preventDefault()
+        jQuery(this).toggleClass('open');
+        jQuery('body').toggleClass('burger-active');
+        
+    });
+  }

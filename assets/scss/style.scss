@@ -29,6 +29,7 @@ $media-expressions: (
 @import 'mixins';
 @import 'footer';
 @import 'animate';
+@import 'burger';
 
 
 
@@ -48,14 +49,28 @@ html {
 
 
 .main-info-section {
+	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -15px;
-	padding-bottom: 290px;
+	padding-bottom: 270px;
 	letter-spacing: -3px;
 	padding-top: 50px;
-	@include media('>768px'){
+	@include media('<640px'){
 		display: flex;
+		padding-bottom: 100px;
+		padding-top: 100px;
 	}
+	@include media('<1280px'){
+		display: flex;
+		padding-bottom: 180px;
+		padding-top: 100px;
+	}
+	@include media('<321px'){
+		display: flex;
+		padding-bottom: 50px;
+		padding-top: 100px;
+	}
+	
 }
 
 
@@ -63,6 +78,16 @@ html {
 	color: white;
 	font-size: 2rem;
 	cursor: context-menu;
+	@include media('<321px'){
+		font-size: 1.6rem;
+	}
+	@include media('<1024px'){
+		font-size: 1.5rem;
+	}
+	@include media('<640px'){
+		font-size: 2rem;
+	}
+	
 }
 
 
@@ -83,12 +108,27 @@ span.name {
 .text {
 	width: 50%;
 	padding: 0 15px;
+	@include media('<640px'){
+		width: 100%;
+		padding: 0 15px;
+		text-align: center;
+		padding-bottom: 150px;
+	}
 }
 
 .text p {
 	letter-spacing: 3px;
 	word-spacing: 10px;
 	font-size: .8rem;
+	@include media('<321px'){
+		font-size: 0.1rem;
+	}
+	@include media('<641px'){
+		font-size: 0.5rem;
+	}
+	@include media('>780px'){
+		font-size: .8rem;
+	}
 }
 
 
@@ -129,8 +169,6 @@ span.name {
 }
 
 
-
-
 .profile-image img {
 	transition: 3s;
 	background-repeat: no-repeat;
@@ -139,21 +177,24 @@ span.name {
 	border: 2px solid black;
 	box-shadow: 0 0px 100px black;
 	width: 100%;
-	max-width: 550px;
 	max-height: 675px;
+	max-width: 550px;
 	// background-image: url(/assets/img/background-image.jpg);
-	
-	
+	@include media('<640px'){
+		max-width: 100%;
+	}
 }
 
 .profile-image {
 	width: 50%;
     padding: 0 15px;
     display: flex;
-    justify-content: flex-end;
+	justify-content: flex-end;
+	@include media('<640px'){
+		width: 100%;
+		display: block;
+	}
 }
-
-
 
 
 .profile-image img:hover {
@@ -161,9 +202,6 @@ span.name {
 	transform: rotate(360deg);
 	transform-origin: 50% 50%;
 }
-
-
-
 
 
 .work-category button {
@@ -184,6 +222,10 @@ div[class^='category-'] {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	grid-gap: 20px;
+	@include media('<321px'){
+		margin-top: 50px;
+		display: block;
+	}
 }
 
 .work {
@@ -191,10 +233,21 @@ div[class^='category-'] {
 }
 
 
+.grid {
+	@include media('<810px'){
+		margin-bottom: 30px;
+		width: 100%;
+	}
+}
+
 .work a {
 	justify-self: center;
 	position: relative;
 	display: inline-block;
+	@include media('<320px'){
+		width: 100%;
+        max-width: 290px;
+	}
 }
 
 .work-category .active {
@@ -206,8 +259,10 @@ button.active {
 }
 
 .work a img {
-	width: 350px;
-	justify-self: center;
+	width: 100%;
+	@include media('>1024px'){
+		width: 350px;
+	}
 }
 
 div.hideCategory {
@@ -216,10 +271,6 @@ div.hideCategory {
 
 .showCategory {
 	display: block;
-}
-
-.contact {
-	
 }
 
 
@@ -238,6 +289,11 @@ form textarea {
 	left: 50%;
 	right: 50%;
 	transform: translateX(-50%);
+	@include media('<321px'){
+		width: 100%;
+		font-size: 0.7rem;
+		
+	}
 }
 
 
