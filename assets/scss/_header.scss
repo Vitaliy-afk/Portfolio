@@ -137,13 +137,6 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	// @include media('<640px'){
-	// 	display: flex;
-	// 	justify-content: flex-start;
-	// }
-	// @include media('<1024px'){
-	// 	display: block;
-	// }
 	li {
 		padding-right: 20px;
 	}

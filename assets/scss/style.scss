@@ -217,6 +217,18 @@ span.name {
 	cursor: pointer;
 }
 
+nav ul,
+.work-category {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	@include media('<640px'){
+		padding-bottom: 0px;
+    }
+}
+
+
 div[class^='category-'] {
 	margin-top: 50px;
 	display: grid;

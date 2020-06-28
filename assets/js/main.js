@@ -10,14 +10,21 @@ spans.forEach(span => span.addEventListener('mouseout', function(e) {
 const htmlBar = document.querySelector('.bar-html')
 const cssBar = document.querySelector('.bar-css')
 const jsBar = document.querySelector('.bar-javascript')
-const reactBar = document.querySelector('.bar-react')
+const gitBar = document.querySelector('.bar-git')
+const wordpressBar = document.querySelector('.bar-wordpress')
+const photoshopBar = document.querySelector('.bar-photoshop')
+const bootstrapBar = document.querySelector('.bar-bootstrap')
 
 var t1 = new TimelineLite()
 
 t1.fromTo(htmlBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(75% - 6px)', ease: Power4.easeOut})
-    .fromTo(cssBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(70% - 6px)', ease: Power4.easeOut})
-    .fromTo(jsBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(75% - 6px)', ease: Power4.easeOut})
-    // .fromTo(reactBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(70% - 6px)', ease: Power4.easeOut})
+    .fromTo(cssBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(55% - 6px)', ease: Power4.easeOut})
+    .fromTo(jsBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(35% - 6px)', ease: Power4.easeOut})
+    .fromTo(gitBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(50% - 6px)', ease: Power4.easeOut})
+    .fromTo(wordpressBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(30% - 6px)', ease: Power4.easeOut})
+    .fromTo(photoshopBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(60% - 6px)', ease: Power4.easeOut})
+    .fromTo(bootstrapBar, .50, {width: 'calc(0% - 6px)'}, {width: 'calc(30% - 6px)', ease: Power4.easeOut})
+
 
 const controller = new ScrollMagic.Controller()
 const scene = new ScrollMagic.Scene({
