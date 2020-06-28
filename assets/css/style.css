@@ -701,7 +701,7 @@ a.about-me-info p:last-child {
 div[class^='tag-'] {
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-  width: 120px;
+  width: 140px;
   height: 30px;
   background-color: #1785a7;
   margin-right: 30px;
@@ -4281,6 +4281,19 @@ span.name {
   cursor: pointer;
 }
 
+nav ul,
+.work-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
 div[class^='category-'] {
   margin-top: 50px;
   display: grid;
@@ -4501,6 +4514,10 @@ form input:last-child {
   .profile-image {
     width: 100%;
     display: block;
+  }
+  nav ul,
+  .work-category {
+    padding-bottom: 0px;
   }
 }
 
