@@ -30,6 +30,8 @@ $media-expressions: (
 @import 'footer';
 @import 'animate';
 @import 'burger';
+@import 'work';
+@import 'contact';
 
 
 
@@ -54,21 +56,21 @@ html {
 	margin: 0 -15px;
 	padding-bottom: 300px;
 	letter-spacing: -3px;
-	padding-top: 50px;
 	@include media('<640px'){
-		display: flex;
 		padding-bottom: 100px;
-		padding-top: 100px;
 	}
-	@include media('<1280px'){
-		display: flex;
-		padding-bottom: 180px;
-		padding-top: 100px;
+	@include media('<=1024px'){
+		padding-bottom: 185px;
 	}
 	@include media('<321px'){
-		display: flex;
+		padding-bottom: 65px;
+	}
+	@include media('>1280px'){
 		padding-bottom: 50px;
-		padding-top: 100px;
+		padding-top: 50px;
+	}
+	@include media('<481px'){
+		padding-bottom: 20px;
 	}
 	
 }
@@ -78,16 +80,19 @@ html {
 	color: white;
 	font-size: 2rem;
 	cursor: context-menu;
-	@include media('<321px'){
-		font-size: 1.6rem;
+	@include media('<360px'){
+		font-size: 1.3rem;
+		letter-spacing: 0.1px;
+		
 	}
 	@include media('<1024px'){
 		font-size: 1.5rem;
+		letter-spacing: 0.1px;
 	}
 	@include media('<640px'){
-		font-size: 2rem;
+		font-size: 1.7rem;
+		letter-spacing: 0.1px;
 	}
-	
 }
 
 
@@ -179,8 +184,7 @@ span.name {
 	width: 100%;
 	max-height: 675px;
 	max-width: 550px;
-	// background-image: url(/assets/img/background-image.jpg);
-	@include media('<640px'){
+		@include media('<640px'){
 		max-width: 100%;
 	}
 }
@@ -201,119 +205,4 @@ span.name {
 	transform: scale(1.1);
 	transform: rotate(360deg);
 	transform-origin: 50% 50%;
-}
-
-
-.work-category button {
-	text-transform: capitalize;
-	border: 3px solid #ed5565;
-	padding: 15px 30px;
-	border-radius: 50px;
-	color: #ed5565;
-	font-size: 1.1rem;
-	letter-spacing: 1px;
-	background-color: #252627;
-	outline: none;
-	cursor: pointer;
-}
-
-nav ul,
-.work-category {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-bottom: 50px;
-	@include media('<640px'){
-		padding-bottom: 0px;
-    }
-}
-
-
-div[class^='category-'] {
-	margin-top: 50px;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	grid-gap: 20px;
-	@include media('<321px'){
-		margin-top: 50px;
-		display: block;
-	}
-}
-
-.work {
-	padding-bottom: 45px;
-}
-
-
-.grid {
-	@include media('<810px'){
-		margin-bottom: 30px;
-		width: 100%;
-	}
-}
-
-.work a {
-	justify-self: center;
-	position: relative;
-	display: inline-block;
-	@include media('<320px'){
-		width: 100%;
-        max-width: 290px;
-	}
-}
-
-.work-category .active {
-	background-color: #ed5565;
-}
-
-button.active {
-	color: #fff;
-}
-
-.work a img {
-	width: 100%;
-	@include media('>1024px'){
-		width: 350px;
-	}
-}
-
-div.hideCategory {
-	display: none;
-}
-
-.showCategory {
-	display: block;
-}
-
-
-form input,
-form textarea {
-	display: block;
-	width: 500px;
-	padding: 20px;
-	background-color: #252627;
-	border: 3px solid #707070;
-	margin: 20px 0;
-	outline: none;
-	font-size: 1.2rem;
-	color: #fff;
-	position: relative;
-	left: 50%;
-	right: 50%;
-	transform: translateX(-50%);
-	@include media('<321px'){
-		width: 100%;
-		font-size: 0.7rem;
-		
-	}
-}
-
-
-
-form input:last-child {
-	width: 200px;
-	background-color: #ed5565;
-	border: none;
-	cursor: pointer;
-	margin-bottom: 2px;
 }

@@ -103,19 +103,6 @@ body {
   }
 }
 
-nav ul,
-.work-category {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 50px;
-}
-
 body {
   background-color: #252627;
 }
@@ -613,15 +600,14 @@ th {
 }
 
 .about-section {
-  padding-bottom: 46px;
+  padding-bottom: 170px;
 }
 
 #about {
   position: relative;
 }
 
-.about-section h1,
-.work h1 {
+.about-section h1 {
   font-size: 10rem;
   z-index: 0;
   opacity: .1;
@@ -631,7 +617,6 @@ th {
 }
 
 .about-section ul {
-  text-align: justify;
   margin: 0 -15px;
 }
 
@@ -650,18 +635,20 @@ th {
   background-color: #252627;
   -webkit-box-shadow: 2rem 3rem 2.2rem rgba(0, 0, 0, 0.25);
           box-shadow: 2rem 3rem 2.2rem rgba(0, 0, 0, 0.25);
-  padding: 50px;
+  padding: 35px;
   z-index: 1;
-  min-height: 387px;
-}
-
-.about-me-info p {
-  font-size: 1.1rem;
+  min-height: 300px;
+  font-size: 1.0rem;
   color: #bebebe;
   line-height: 1.5;
   letter-spacing: 1px;
   width: 100%;
   max-width: 812px;
+}
+
+.border-fix {
+  border: 2px solid grey;
+  padding: 10px;
 }
 
 .about-me-info mark {
@@ -675,15 +662,15 @@ a.about-me-info p:last-child {
 }
 
 .skills {
-  padding-bottom: 90px;
+  padding-bottom: 69px;
 }
 
-.skills h1,
-.contact h1 {
+.skills h1 {
   text-align: right;
   font-size: 10rem;
   opacity: .1;
   margin: 0;
+  padding-bottom: 25px;
 }
 
 .html {
@@ -710,10 +697,9 @@ div[class^='tag-'] {
 div[class^='tag-'] p {
   color: #fff;
   padding-left: 10px;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   padding-top: 3px;
   text-transform: uppercase;
-  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4136,6 +4122,112 @@ footer p {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
+.work h1 {
+  font-size: 10rem;
+  z-index: 0;
+  opacity: .1;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+.work-category button {
+  text-transform: capitalize;
+  border: 3px solid #ed5565;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #ed5565;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  background-color: #252627;
+  outline: none;
+  cursor: pointer;
+}
+
+nav ul,
+.work-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+div[class^='category-'] {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+
+.work {
+  padding-bottom: 184px;
+}
+
+.work a {
+  justify-self: center;
+  position: relative;
+  height: 256px;
+}
+
+.work-category .active {
+  background-color: #ed5565;
+}
+
+button.active {
+  color: #fff;
+}
+
+.work a img {
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+}
+
+div.hideCategory {
+  display: none;
+}
+
+.showCategory {
+  display: block;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 500px;
+  padding: 20px;
+  background-color: #252627;
+  border: 3px solid #707070;
+  outline: none;
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 10px auto;
+  resize: none;
+}
+
+form input:last-child {
+  width: 200px;
+  background-color: #ed5565;
+  border: none;
+  cursor: pointer;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  text-align: right;
+  font-size: 10rem;
+  opacity: .1;
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -4157,7 +4249,6 @@ html {
   margin: 0 -15px;
   padding-bottom: 300px;
   letter-spacing: -3px;
-  padding-top: 50px;
 }
 
 .text h1 {
@@ -4268,96 +4359,6 @@ span.name {
           transform-origin: 50% 50%;
 }
 
-.work-category button {
-  text-transform: capitalize;
-  border: 3px solid #ed5565;
-  padding: 15px 30px;
-  border-radius: 50px;
-  color: #ed5565;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  background-color: #252627;
-  outline: none;
-  cursor: pointer;
-}
-
-nav ul,
-.work-category {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 50px;
-}
-
-div[class^='category-'] {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 20px;
-}
-
-.work {
-  padding-bottom: 45px;
-}
-
-.work a {
-  justify-self: center;
-  position: relative;
-  display: inline-block;
-}
-
-.work-category .active {
-  background-color: #ed5565;
-}
-
-button.active {
-  color: #fff;
-}
-
-.work a img {
-  width: 100%;
-}
-
-div.hideCategory {
-  display: none;
-}
-
-.showCategory {
-  display: block;
-}
-
-form input,
-form textarea {
-  display: block;
-  width: 500px;
-  padding: 20px;
-  background-color: #252627;
-  border: 3px solid #707070;
-  margin: 20px 0;
-  outline: none;
-  font-size: 1.2rem;
-  color: #fff;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-form input:last-child {
-  width: 200px;
-  background-color: #ed5565;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 2px;
-}
-
 @media (min-width: 781px) {
   .text p {
     font-size: .8rem;
@@ -4396,18 +4397,24 @@ form input:last-child {
     display: -ms-flexbox;
     display: flex;
   }
+  .main-info-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 1279px) {
   .about-section ul li {
     width: 100%;
   }
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    padding-bottom: 45px;
+  }
   .main-info-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 180px;
-    padding-top: 100px;
+    padding-bottom: 185px;
   }
 }
 
@@ -4433,6 +4440,7 @@ form input:last-child {
   }
   .text h1 {
     font-size: 1.5rem;
+    letter-spacing: 0.1px;
   }
 }
 
@@ -4469,10 +4477,6 @@ form input:last-child {
 }
 
 @media (max-width: 639px) {
-  nav ul,
-  .work-category {
-    padding-bottom: 0px;
-  }
   .about-section ul {
     font-size: 1.5rem;
   }
@@ -4480,27 +4484,32 @@ form input:last-child {
     width: 100%;
   }
   .skills {
-    padding-bottom: 60px;
-  }
-  .about-section h1,
-  .skills h1,
-  .contact h1,
-  .work h1 {
-    font-size: 7rem;
-    text-align: center;
+    padding-bottom: 30px;
   }
   .skills h1 {
     padding-bottom: 55px;
   }
+  div[class^='tag-'] p {
+    font-size: 0.6rem;
+  }
+  .work h1 {
+    font-size: 7rem;
+    text-align: center;
+  }
+  nav ul,
+  .work-category {
+    padding-bottom: 0px;
+  }
+  .contact h1 {
+    font-size: 7rem;
+    text-align: center;
+  }
   .main-info-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding-bottom: 100px;
-    padding-top: 100px;
   }
   .text h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.1px;
   }
   .text {
     width: 100%;
@@ -4515,9 +4524,70 @@ form input:last-child {
     width: 100%;
     display: block;
   }
-  nav ul,
-  .work-category {
-    padding-bottom: 0px;
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding-bottom: 50px;
+  }
+  .about-section h1,
+  .skills h1,
+  .work h1,
+  .contact h1 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+  .work-category button {
+    font-size: 0.5rem;
+  }
+  .work {
+    padding-bottom: 40px;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .main-info-section {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-me-info {
+    font-size: 0.9rem;
+  }
+  .contact h1 {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  div[class^='category-'] {
+    margin-top: 50px;
+    display: block;
+  }
+}
+
+@media (max-width: 359px) {
+  .about-section h1,
+  .skills h1,
+  .work h1,
+  .contact h1 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .work-category button {
+    font-size: 0.8rem;
+  }
+  .text h1 {
+    font-size: 1.3rem;
+    letter-spacing: 0.1px;
   }
 }
 
@@ -4530,9 +4600,6 @@ form input:last-child {
   a {
     font-size: 0.7rem;
   }
-  .about-section h1,
-  .skills h1,
-  .contact h1,
   .work h1 {
     font-size: 4.5rem;
   }
@@ -4540,26 +4607,10 @@ form input:last-child {
     font-size: 3.5rem;
   }
   .main-info-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 50px;
-    padding-top: 100px;
-  }
-  .text h1 {
-    font-size: 1.6rem;
+    padding-bottom: 65px;
   }
   .text p {
     font-size: 0.1rem;
-  }
-  div[class^='category-'] {
-    margin-top: 50px;
-    display: block;
-  }
-  form input,
-  form textarea {
-    width: 100%;
-    font-size: 0.7rem;
   }
 }
 

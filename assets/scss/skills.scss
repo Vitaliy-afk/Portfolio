@@ -1,38 +1,23 @@
 .skills {
-	padding-bottom: 90px;
+	padding-bottom: 69px;
 	@include media('<640px'){
-		padding-bottom: 60px;
+		padding-bottom: 30px;
 	}
 	@include media('<320px'){
 		padding-bottom: 15px;
 	}
+	@include media('<=1024px'){
+		padding-bottom: 45px;
+	}
 }
 
-.skills h1,
-.contact h1 {
+.skills h1 {
 	text-align: right;
 	font-size: 10rem;
 	opacity: .1;
 	margin: 0;
+	padding-bottom: 25px;
 	
-}
-.about-section h1,
-.skills h1,
-.contact h1,
-.work h1 {
-	@include media('<640px'){
-		font-size: 7rem;
-		text-align: center;
-	}
-	@include media('<321px'){
-		font-size: 4.5rem;
-	}
-}
-
-.contact h1 {
-	@include media('<321px'){
-	font-size: 3.5rem;
-	}
 }
 
 .skills h1 {
@@ -47,6 +32,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 40px;
+	
 }
 
 div[class^='tag-'] {
@@ -60,14 +46,16 @@ div[class^='tag-'] {
 div[class^='tag-'] p {
 	color: #fff;
 	padding-left: 10px;
-	font-size: 1.1rem;
+	font-size: 0.7rem;
 	padding-top: 3px;
 	text-transform: uppercase;
-	font-size: 12px;
 	display: flex;
 	align-items: center;
 	width: 100%;
 	min-height: 27px;
+	@include media('<640px'){
+		font-size: 0.6rem;
+	}
 }
 
 .progressbar {

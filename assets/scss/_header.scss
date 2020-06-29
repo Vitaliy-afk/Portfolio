@@ -66,16 +66,6 @@
 
 
 
-nav ul,
-.work-category {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-bottom: 50px;
-	@include media('<640px'){
-		padding-bottom: 0px;
-    }
-}
 
 body {
 	background-color: #252627;

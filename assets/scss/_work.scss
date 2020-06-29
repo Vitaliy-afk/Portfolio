@@ -1,0 +1,109 @@
+.work h1 {
+	font-size: 10rem;
+	z-index: 0;
+	opacity: .1;
+	color: #fff;
+	margin: 0;
+    padding-bottom: 60px;
+    @include media('<640px'){
+		font-size: 7rem;
+		text-align: center;
+	}
+	@include media('<321px'){
+		font-size: 4.5rem;
+	}
+	
+}
+
+.work-category button {
+	text-transform: capitalize;
+	border: 3px solid #ed5565;
+	padding: 15px 30px;
+	border-radius: 50px;
+	color: #ed5565;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	background-color: #252627;
+	outline: none;
+	cursor: pointer;
+	@include media('<360px'){
+		font-size: 0.8rem;
+	}
+	@include media('<481px'){
+		font-size: 0.5rem;
+	}
+}
+
+nav ul,
+.work-category {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 50px;
+	@include media('<640px'){
+		padding-bottom: 0px;
+    }
+}
+
+
+div[class^='category-'] {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-gap: 20px;
+	@include media('<=360px'){
+		margin-top: 50px;
+		display: block;
+	}
+}
+
+.work {
+	padding-bottom: 184px;
+	@include media('<481px'){
+		padding-bottom: 40px;
+	}
+}
+
+
+.grid {
+	@include media('<810px'){
+		margin-bottom: 30px;
+		width: 100%;
+	}
+}
+
+.work a {
+	justify-self: center;
+	position: relative;
+	height: 256px;
+	@include media('<320px'){
+		width: 100%;
+        max-width: 290px;
+	}
+}
+
+.work-category .active {
+	background-color: #ed5565;
+}
+
+button.active {
+	color: #fff;
+}
+
+.work a img {
+	width: 100%;
+	max-width: 350px;
+	height: 100%;
+	@include media('>1024px'){
+		width: 350px;
+	}
+}
+
+div.hideCategory {
+	display: none;
+}
+
+.showCategory {
+	display: block;
+}
+
