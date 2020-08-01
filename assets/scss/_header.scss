@@ -122,17 +122,14 @@ header {
 }
 
 
-.menu {
+.menu-list {
 	@extend %listreset;
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	li {
+	&__item:not(:last-child){
 		padding-right: 20px;
 	}
-	
-
-	
 }
 
 

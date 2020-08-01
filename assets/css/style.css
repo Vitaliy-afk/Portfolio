@@ -22,7 +22,7 @@ body {
   padding: 0;
 }
 
-.menu, .about-section ul {
+.menu-list, .about-section ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -138,7 +138,7 @@ header {
   padding: 0 15px;
 }
 
-.menu {
+.menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +149,7 @@ header {
       flex-wrap: wrap;
 }
 
-.menu li {
+.menu-list__item:not(:last-child) {
   padding-right: 20px;
 }
 
@@ -600,7 +600,7 @@ th {
 }
 
 .about-section {
-  margin-bottom: 170px;
+  padding-bottom: 170px;
 }
 
 #about {
@@ -613,7 +613,7 @@ th {
   opacity: .1;
   color: #fff;
   margin: 0;
-  margin-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 .about-section ul {
@@ -682,7 +682,7 @@ a.about-me-info p:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 div[class^='tag-'] {
@@ -4128,7 +4128,7 @@ footer p {
   opacity: .1;
   color: #fff;
   margin: 0;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .work-category button {
@@ -4154,7 +4154,7 @@ nav ul,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 div[class^='category-'] {
@@ -4165,7 +4165,7 @@ div[class^='category-'] {
 }
 
 .work {
-  margin-bottom: 184px;
+  padding-bottom: 184px;
 }
 
 .work a {
@@ -4247,7 +4247,7 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -15px;
-  margin-bottom: 300px;
+  padding-bottom: 300px;
   letter-spacing: -3px;
 }
 
@@ -4398,8 +4398,8 @@ span.name {
     display: flex;
   }
   .main-info-section {
-    margin-bottom: 50px;
-    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 }
 
@@ -4414,7 +4414,7 @@ span.name {
     margin-bottom: 45px;
   }
   .main-info-section {
-    margin-bottom: 185px;
+    padding-bottom: 185px;
   }
 }
 
@@ -4446,7 +4446,7 @@ span.name {
 
 @media (max-width: 809px) {
   .grid {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     width: 100%;
   }
 }
@@ -4498,14 +4498,14 @@ span.name {
   }
   nav ul,
   .work-category {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .contact h1 {
     font-size: 7rem;
     text-align: center;
   }
   .main-info-section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .text h1 {
     font-size: 1.7rem;
@@ -4515,7 +4515,7 @@ span.name {
     width: 100%;
     padding: 0 15px;
     text-align: center;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
   .profile-image img {
     max-width: 100%;
@@ -4528,7 +4528,7 @@ span.name {
 
 @media (max-width: 480px) {
   .about-section {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   .about-section h1,
   .skills h1,
@@ -4545,7 +4545,7 @@ span.name {
     font-size: 0.5rem;
   }
   .work {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   form input,
   form textarea {
@@ -4553,7 +4553,7 @@ span.name {
     font-size: 0.7rem;
   }
   .main-info-section {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -4607,7 +4607,7 @@ span.name {
     font-size: 3.5rem;
   }
   .main-info-section {
-    margin-bottom: 65px;
+    padding-bottom: 65px;
   }
   .text p {
     font-size: 0.1rem;

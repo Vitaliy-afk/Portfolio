@@ -4,7 +4,7 @@
 	opacity: .1;
 	color: #fff;
 	margin: 0;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     @include media('<640px'){
 		font-size: 7rem;
 		text-align: center;
@@ -39,9 +39,9 @@ nav ul,
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 	@include media('<640px'){
-		margin-bottom: 0px;
+		padding-bottom: 0px;
     }
 }
 
@@ -58,16 +58,16 @@ div[class^='category-'] {
 }
 
 .work {
-	margin-bottom: 184px;
+	padding-bottom: 184px;
 	@include media('<481px'){
-		margin-bottom: 40px;
+		padding-bottom: 40px;
 	}
 }
 
 
 .grid {
 	@include media('<810px'){
-		margin-bottom: 30px;
+		padding-bottom: 30px;
 		width: 100%;
 	}
 }
