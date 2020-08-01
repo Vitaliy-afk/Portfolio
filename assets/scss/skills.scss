@@ -1,13 +1,13 @@
 .skills {
-	padding-bottom: 69px;
+	margin-bottom: 69px;
 	@include media('<640px'){
-		padding-bottom: 30px;
+		margin-bottom: 30px;
 	}
 	@include media('<320px'){
-		padding-bottom: 15px;
+		margin-bottom: 15px;
 	}
 	@include media('<=1024px'){
-		padding-bottom: 45px;
+		margin-bottom: 45px;
 	}
 }
 
@@ -22,7 +22,7 @@
 
 .skills h1 {
 	@include media('<640px'){
-		padding-bottom: 55px;
+		margin-bottom: 55px;
 	}
 }
 
@@ -47,7 +47,7 @@ div[class^='tag-'] p {
 	color: #fff;
 	padding-left: 10px;
 	font-size: 0.7rem;
-	padding-top: 3px;
+	margin-top: 3px;
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;

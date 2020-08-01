@@ -54,23 +54,23 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -15px;
-	padding-bottom: 300px;
+	margin-bottom: 300px;
 	letter-spacing: -3px;
 	@include media('<640px'){
-		padding-bottom: 100px;
+		margin-bottom: 100px;
 	}
 	@include media('<=1024px'){
-		padding-bottom: 185px;
+		margin-bottom: 185px;
 	}
 	@include media('<321px'){
 		padding-bottom: 65px;
 	}
 	@include media('>1280px'){
-		padding-bottom: 50px;
-		padding-top: 50px;
+		margin-bottom: 50px;
+		margin-top: 50px;
 	}
 	@include media('<481px'){
-		padding-bottom: 20px;
+		margin-bottom: 20px;
 	}
 	
 }
@@ -117,7 +117,7 @@ span.name {
 		width: 100%;
 		padding: 0 15px;
 		text-align: center;
-		padding-bottom: 150px;
+		margin-bottom: 150px;
 	}
 }
 

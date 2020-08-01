@@ -4,7 +4,7 @@
 	opacity: .1;
 	color: #fff;
 	margin: 0;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     @include media('<640px'){
 		font-size: 7rem;
 		text-align: center;
@@ -39,9 +39,9 @@ nav ul,
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	@include media('<640px'){
-		padding-bottom: 0px;
+		margin-bottom: 0px;
     }
 }
 
@@ -58,9 +58,9 @@ div[class^='category-'] {
 }
 
 .work {
-	padding-bottom: 184px;
+	margin-bottom: 184px;
 	@include media('<481px'){
-		padding-bottom: 40px;
+		margin-bottom: 40px;
 	}
 }
 
