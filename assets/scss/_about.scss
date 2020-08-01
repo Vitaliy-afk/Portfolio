@@ -1,8 +1,8 @@
 
 .about-section {
-	padding-bottom: 170px;
+	margin-bottom: 170px;
 	@include media('<481px'){
-		padding-bottom: 50px;
+		margin-bottom: 50px;
 	}
 	
 }
@@ -19,7 +19,7 @@
 	opacity: .1;
 	color: #fff;
 	margin: 0;
-	padding-bottom: 45px;
+	margin-bottom: 45px;
 	
 }
 .about-section h1,
