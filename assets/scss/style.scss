@@ -63,7 +63,7 @@ html {
 		margin-bottom: 185px;
 	}
 	@include media('<321px'){
-		padding-bottom: 65px;
+		margin-bottom: 65px;
 	}
 	@include media('>1280px'){
 		margin-bottom: 50px;
