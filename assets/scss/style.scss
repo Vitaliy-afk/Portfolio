@@ -124,6 +124,7 @@ span.name {
 	letter-spacing: 3px;
 	word-spacing: 10px;
 	font-size: .8rem;
+	text-transform: uppercase;
 	@include media('<321px'){
 		font-size: 0.1rem;
 	}
