@@ -77,7 +77,9 @@
     width: 100%;
 	max-width: 812px;
 	@include media('<480px'){
-		font-size: 0.9rem;
+		font-size: 0.5rem;
+		padding: 10px;
+		min-height: 0;
 	}
 }
 
@@ -92,8 +94,8 @@
 	background: none;
 }
 
-a.about-me-info p:nth-child(2),
-a.about-me-info p:last-child {
-	margin-top: 30px;
-}
+// a.about-me-info p:nth-child(2),
+// a.about-me-info p:last-child {
+// 	margin-top: 30px;
+// }
 

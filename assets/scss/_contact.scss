@@ -1,3 +1,13 @@
+.contact {
+	.container {
+		flex-direction: column;
+		letter-spacing: 0.5px;
+	}
+	text-align: center;
+}
+
+
+
 form input,
 form textarea {
 	display: block;
@@ -18,7 +28,6 @@ form textarea {
 }
 
 
-
 form input:last-child {
 	width: 200px;
 	background-color: #ed5565;
@@ -26,10 +35,6 @@ form input:last-child {
 	cursor: pointer;
 }
 
-
-.contact {
-	text-align: center;
-}
 
 .contact h1 {
 	text-align: right;

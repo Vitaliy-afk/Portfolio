@@ -1,3 +1,15 @@
+.work {
+	padding-bottom: 184px;
+	.container {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	@include media('<481px'){
+		padding-bottom: 40px;
+	}
+}
+
+
 .work h1 {
 	font-size: 10rem;
 	z-index: 0;
@@ -26,6 +38,7 @@
 	background-color: #252627;
 	outline: none;
 	cursor: pointer;
+	margin-bottom: 30px;
 	@include media('<360px'){
 		font-size: 0.8rem;
 	}
@@ -39,7 +52,7 @@ nav ul,
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	@include media('<640px'){
 		padding-bottom: 0px;
     }
@@ -54,13 +67,6 @@ div[class^='category-'] {
 	@include media('<=360px'){
 		margin-top: 50px;
 		display: block;
-	}
-}
-
-.work {
-	padding-bottom: 184px;
-	@include media('<481px'){
-		padding-bottom: 40px;
 	}
 }
 

@@ -32,6 +32,7 @@ $media-expressions: (
 @import 'burger';
 @import 'work';
 @import 'contact';
+@import 'scroll';
 
 
 
@@ -51,11 +52,14 @@ html {
 
 
 .main-info-section {
-	display: flex;
-	flex-wrap: wrap;
 	margin: 0 -15px;
 	padding-bottom: 300px;
-	letter-spacing: -3px;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1576px;
+		letter-spacing: -3px;
+	}
 	@include media('<640px'){
 		padding-bottom: 100px;
 	}
