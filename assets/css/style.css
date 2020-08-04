@@ -4333,12 +4333,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-info-section {
+.info-section {
   margin: 0 -15px;
   padding-bottom: 300px;
 }
 
-.main-info-section .container {
+.info-section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4495,7 +4495,7 @@ span.name {
     display: -ms-flexbox;
     display: flex;
   }
-  .main-info-section {
+  .info-section {
     padding-bottom: 50px;
     padding-top: 50px;
   }
@@ -4511,7 +4511,7 @@ span.name {
   .skills {
     padding-bottom: 45px;
   }
-  .main-info-section {
+  .info-section {
     padding-bottom: 185px;
   }
 }
@@ -4605,7 +4605,7 @@ span.name {
     font-size: 7rem;
     text-align: center;
   }
-  .main-info-section {
+  .info-section {
     padding-bottom: 100px;
   }
   .text h1 {
@@ -4653,7 +4653,7 @@ span.name {
     width: 100%;
     font-size: 0.7rem;
   }
-  .main-info-section {
+  .info-section {
     padding-bottom: 20px;
   }
 }
@@ -4715,7 +4715,7 @@ span.name {
   .contact h1 {
     font-size: 3.5rem;
   }
-  .main-info-section {
+  .info-section {
     padding-bottom: 65px;
   }
   .text p {
