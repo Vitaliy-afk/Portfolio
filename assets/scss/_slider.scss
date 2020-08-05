@@ -82,7 +82,7 @@
     background-repeat: no-repeat;
     top: 30%;
     left: 0;
-    transform: translateX(-50px);
+    // transform: translateX(-50px);
     // @include media ('<=640px'){
     //     top: 60%;
     //     left: 0%;
@@ -96,8 +96,8 @@
     background-position: center;
     background-repeat: no-repeat;
     top: 30%;
-    right: 0;
-    transform: translateX(50px);
+    right: -2px;
+    // transform: translateX(50px);
     // @include media ('<=640px'){
     //     top: 60%;
     //     right: 0%;

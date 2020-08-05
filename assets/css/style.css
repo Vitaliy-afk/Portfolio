@@ -4412,9 +4412,6 @@ form input:last-child {
   background-repeat: no-repeat;
   top: 30%;
   left: 0;
-  -webkit-transform: translateX(-50px);
-      -ms-transform: translateX(-50px);
-          transform: translateX(-50px);
 }
 
 .slider-work .slick-arrow.slick-next {
@@ -4423,10 +4420,7 @@ form input:last-child {
   background-position: center;
   background-repeat: no-repeat;
   top: 30%;
-  right: 0;
-  -webkit-transform: translateX(50px);
-      -ms-transform: translateX(50px);
-          transform: translateX(50px);
+  right: -2px;
 }
 
 .slider-work button.slick-next.slick-arrow {
