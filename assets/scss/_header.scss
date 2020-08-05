@@ -68,11 +68,6 @@
 }
 
 
-
-body {
-	background-color: #252627;
-}
-
 header {
 	display: flex;
 	flex-wrap: wrap;
@@ -82,9 +77,6 @@ header {
 	z-index: 1001;
     width: 100%;
 	position: relative;
-	// .container {
-	// 	flex-direction: column;
-	// }
 	@include media('<1024px'){
 		height: 100px;
     }
@@ -170,7 +162,7 @@ a {
 
 
 .hover:hover {
-    color: rgb(78, 78, 78);
+    color: #ed5565;
 }
 
 .hover:after {
@@ -179,7 +171,7 @@ a {
 	left: 0; 
 	width: 0;
 	height: 5px; 
-	background-color: grey;
+	background-color: #006373;
 	content: "";
 	transition: width 0.1s;
 }
