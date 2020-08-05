@@ -5,7 +5,11 @@
 }
 
 body {
-    background-image: url(/assets/img/background-image.jpg);
+    // background-image: url(/assets/img/background-image.jpg);
+    background-image: url(/assets/img/fon.jpg);
+    // background-image: url(/assets/img/fon5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 
@@ -15,9 +19,6 @@ body {
     padding-right: 20px;
     margin: 0 auto;
     max-width: 1576px;
-    display: flex;
-	flex-wrap: wrap;
-	letter-spacing: -3px;
 }
 
 

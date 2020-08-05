@@ -7,6 +7,7 @@
 	<title>Porfolio</title>
 	<script src="https://kit.fontawesome.com/1efa8c618a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="./assets/js/slick.min.js" defer></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -154,27 +155,36 @@
 		</section>
 		<section class="work" id="work">
 			<div class="container">
-				<h1>Work</h1>
-				<div class="work-category">
-					<button id="designing" class="active grid" onclick="showRequiredCategory(this)">Web Developer</button>
-					<button id="animation" class="grid" onclick="showRequiredCategory(this)">Web Animation</button>
-					<button id="project" class="grid" onclick="showRequiredCategory(this)">React Projects</button>
-				</div>
-				<div class="category-designing showCategory">
-					<a href="https://loving-wiles-7bfeef.netlify.app"><img src="./assets/img/internet-shop.png" alt="image description"></a>
-					<a href="https://peaceful-villani-01a9cc.netlify.app"><img src="./assets/img/blog-template.png" alt="image description"></a>
-					<a href="https://peaceful-villani-01a9cc.netlify.app/post.html"><img src="./assets/img/blog-template2.png" alt="image description"></a>
-				</div>
-				<div class="category-animation hideCategory">
-					<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
-					<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
-					<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
-				</div>
-				<div class="category-project hideCategory">
-					<a href="#"><img src="/assets/img/1.png" alt="image description"></a>
-					<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
-					<a href="#"><img src="/assets/img/3.png" alt="image description"></a>
-					<a href="#"><img src="/assets/img/2.png" alt="image description"></a>
+				<h1 class="work-title">Work</h1>
+				<div class="slider-work">
+					<div class="slider-work__item">
+						<div class="slider-work__item-content" style="background-image: url('assets/img/slide1.jpg');">
+							<div class="item-content__mini-box">
+								<h1>Internet-Shop</h1>
+							</div>
+						</div>
+					</div>
+					<div class="slider-work__item">
+						<div class="slider-work__item-content" style="background-image: url('assets/img/slide2.jpg');">
+							<div class="item-content__mini-box">
+								<h1>Blog-Template</h1>
+							</div>
+						</div>
+					</div>
+					<div class="slider-work__item">
+						<div class="slider-work__item-content" style="background-image: url('assets/img/slide3.jpg');">
+							<div class="item-content__mini-box">
+								<h1>Web-Studio</h1>
+							</div>
+						</div>
+					</div>
+					<div class="slider-work__item">
+						<div class="slider-work__item-content" style="background-image: url('assets/img/slide4.jpg');">
+							<div class="item-content__mini-box">
+								<h1>Cozy-House</h1>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -212,6 +222,7 @@
 		</footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/slick.min.js"></script>
 	<script src="./assets/js/jquery.main.js"></script>
 	<script src="./assets/js/ScrollMagic.min.js"></script>
     <script src="./assets/js/animation.gsap.min.js"></script>

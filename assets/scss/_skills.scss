@@ -1,9 +1,5 @@
 .skills {
-	.container {
-		flex-direction: column;
-		letter-spacing: 0.5px;
-	}
-	margin-bottom: 69px;
+	padding-bottom: 60px;
 	@include media('<640px'){
 		padding-bottom: 30px;
 	}

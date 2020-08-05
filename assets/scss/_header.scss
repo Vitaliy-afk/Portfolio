@@ -25,6 +25,10 @@
 
 .header {
 	// margin: 0 -15px;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	@include media('<780px'){
 		visibility: hidden;
 	}

@@ -1,6 +1,10 @@
 
 .about-section {
 	padding-bottom: 170px;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	@include media('<481px'){
 		padding-bottom: 50px;
 	}

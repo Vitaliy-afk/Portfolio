@@ -37,31 +37,32 @@ const scene = new ScrollMagic.Scene({
 .addTo(controller)
 
 
-function showRequiredCategory(event) {
-    const getId = event.id;
-    const links = document.querySelectorAll('.work-category button');
-    for (i = 0; i < links.length; i++) {
-        if (links[i].hasAttribute('class')) {
-            links[i].classList.remove('active');
-        }
-    }
+// function showRequiredCategory(event) {
+//     const getId = event.id;
+//     const links = document.querySelectorAll('.work-category button');
+//     for (i = 0; i < links.length; i++) {
+//         if (links[i].hasAttribute('class')) {
+//             links[i].classList.remove('active');
+//         }
+//     }
 
-    event.classList.add('active');
-    const getCategory = document.querySelector(`.category-${getId}`);
-    const categories = document.querySelectorAll('div[class ^= "category"]');
-    for (j = 0; j < categories.length; j++) {
-        if (categories[j].hasAttribute('class')) {
-            categories[j].classList.remove('showCategory');
-            categories[j].classList.add('hideCategory');
-        }
-    }
+//     event.classList.add('active');
+//     const getCategory = document.querySelector(`.category-${getId}`);
+//     const categories = document.querySelectorAll('div[class ^= "category"]');
+//     for (j = 0; j < categories.length; j++) {
+//         if (categories[j].hasAttribute('class')) {
+//             categories[j].classList.remove('showCategory');
+//             categories[j].classList.add('hideCategory');
+//         }
+//     }
 
-    getCategory.classList.remove('hideCategory');
-    getCategory.classList.add('showCategory');
-}
+//     getCategory.classList.remove('hideCategory');
+//     getCategory.classList.add('showCategory');
+// }
 
 jQuery( document ).ready(function() {
     initBurgerMenu();
+    initSlickSlider();
 });
 
 
@@ -70,9 +71,42 @@ function initBurgerMenu() {
         e.preventDefault()
         jQuery(this).toggleClass('open');
         jQuery('body').toggleClass('burger-active');
-        
     });
 }
+
+
+function initSlickSlider() {
+  jQuery('.slider-work').slick({
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  arrows: true,
+    responsive: [
+      {
+        breakpoint: 2560,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+})};
 
 
 const offset = 100;
