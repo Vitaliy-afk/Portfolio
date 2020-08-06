@@ -9,6 +9,9 @@
     opacity: .1;
     margin: 0;
     padding-bottom: 126px;
+    @include media('<1024px'){
+        padding-bottom: 50px;
+    }
 }
 
 
@@ -17,17 +20,28 @@
     background-color: black;
     box-shadow: 0 0 10px 0; 
     opacity: 50%;
-    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%;
     min-height: 50px;
-    top: 75%;
+    top: 68%;
     text-transform: capitalize;
     transition: .3s;
+    @include media('<1024px'){
+        top: 71%;
+    }
     h1 {
         margin: 0;
         font-size: 20px;
     }
 }
+
+.item-content__title {
+    @include media('<1024px'){
+        font-size: 14px!important;
+    }
+}
+
 
 .slider-work__item-content:hover {
     transform: scale(1.1);
@@ -36,7 +50,6 @@
 
 
 .slider-work {
-    // background-color: #f1edee;
     min-height: 200px;
     display: flex;
     align-items: center;

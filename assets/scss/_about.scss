@@ -1,6 +1,9 @@
 
 .about-section {
 	padding-bottom: 170px;
+	@include media('<1280px'){
+		padding-bottom: 50px;
+	}
 	.container {
 		display: flex;
 		flex-wrap: wrap;
@@ -8,13 +11,11 @@
 	@include media('<481px'){
 		padding-bottom: 50px;
 	}
-	
 }
 
 
 #about {
 	position: relative;
-	
 }
 
 .about-section h1 {
@@ -38,6 +39,11 @@
 	@include media('<481px'){
 		width: 100%;
 		font-size: 3rem;
+		text-align: center;
+	}
+	@include media('<1024px'){
+		width: 100%;
+		font-size: 6rem;
 		text-align: center;
 	}
 }
@@ -79,11 +85,16 @@
     line-height: 1.5;
     letter-spacing: 1px;
     width: 100%;
-	max-width: 812px;
 	@include media('<480px'){
 		font-size: 0.5rem;
 		padding: 10px;
 		min-height: 0;
+	}
+	@include media('<661px'){
+		min-height: 100px;
+		font-size: 0.6rem;
+		padding: 20px;
+		width: 100%;
 	}
 }
 

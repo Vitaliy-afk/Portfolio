@@ -38,13 +38,6 @@ form input:last-child {
 	font-size: 10rem;
 	opacity: .1;
 	margin: 0;
-	@include media('<640px'){
-		font-size: 7rem;
-		text-align: center;
-	}
-    @include media('<321px'){
-        font-size: 3.5rem;
-	}
 	@include media('<480px'){
         padding-bottom: 10px;
     }

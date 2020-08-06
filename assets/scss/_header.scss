@@ -24,13 +24,13 @@
 
 
 .header {
-	// margin: 0 -15px;
 	.container {
 		display: flex;
 		flex-wrap: wrap;
 	}
 	@include media('<780px'){
 		visibility: hidden;
+		background: #181818;
 	}
 }
 
@@ -45,7 +45,7 @@
     @include media('>1024px'){
         display: none;
     }
-    .burger-active &{
+    .burger-active & {
         @include media('<1024px'){
             opacity: 1;
             // visibility: visible;
@@ -101,23 +101,30 @@ header {
 		position: static;
 		
 	}
+	@include media('<1024px'){
+		width: 90%;
+		padding: 0;
+	}
 	.burger-active & {
 		@include media('<1024px'){
-			background-color: #181818;
 			visibility: visible;
         	top: 65%;
         	display: flex;
 			justify-content: space-around;
 			
 		}
-		@include media('<321px'){
+		@include media('<1024px'){
 			visibility: visible;
-			background-color: #181818;
-			width: 100%;
+			width: 90%;
 		}
 	}
 }
 
+.menu-list__item a {
+	@include media('<640px'){
+		font-size: 10px;
+	}
+}
 
 .menu-list {
 	@extend %listreset;
@@ -176,7 +183,4 @@ a {
 	transition: width 0.1s;
 }
 
-.hover:hover:after,
-.hover:focus:after {
-	width: 100%; 
-}
+

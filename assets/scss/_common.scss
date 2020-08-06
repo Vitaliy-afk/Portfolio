@@ -1,13 +1,10 @@
 #wrapper {
-    box-sizing: border-box;
     overflow: hidden;
     font-family: 'Krona One', sans-serif;
 }
 
 body {
-    // background-image: url(/assets/img/background-image.jpg);
     background-image: url(/assets/img/fon.jpg);
-    // background-image: url(/assets/img/fon5.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -23,8 +20,11 @@ body {
 
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Krona One', sans-serif;
 }
+
 
 
