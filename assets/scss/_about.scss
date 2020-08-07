@@ -86,7 +86,8 @@
     color: #bebebe;
     line-height: 1.5;
     letter-spacing: 1px;
-    width: 100%;
+	width: 100%;
+	opacity: 80%;
 	@include media('<480px'){
 		font-size: 0.5rem;
 		padding: 10px;
