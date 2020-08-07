@@ -169,7 +169,7 @@ a {
 
 
 .hover:hover {
-    color: #ed5565;
+	color: #ed5565;
 }
 
 .hover:after {
@@ -182,5 +182,11 @@ a {
 	content: "";
 	transition: width 0.1s;
 }
+
+.hover:hover:after,
+.hover:focus:after {
+	width: 100%; 
+}
+
 
 
