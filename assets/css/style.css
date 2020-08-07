@@ -780,82 +780,163 @@ th {
   position: relative;
 }
 
+.circle2 {
+  -webkit-animation: circle2 10s linear forwards infinite;
+          animation: circle2 10s linear forwards infinite;
+  position: absolute;
+  left: 0;
+  right: auto;
+  width: 10px;
+  height: 10px;
+  background: black;
+  top: 8px;
+}
+
 @-webkit-keyframes circle2 {
   0% {
-    left: 0%;
+    left: 8px;
+    top: 12px;
+  }
+  24% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    left: calc(100% - 22px);
+    top: 12px;
   }
   50% {
-    background-color: #ed5565;
+    left: calc(100% - 22px);
+    top: calc(100% - 24px);
+  }
+  75% {
+    top: calc(100% - 24px);
+    left: 12px;
   }
   100% {
-    left: 650px;
+    left: 12px;
+    top: 12px;
   }
 }
 
 @keyframes circle2 {
   0% {
-    left: 0%;
+    left: 8px;
+    top: 12px;
+  }
+  24% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    left: calc(100% - 22px);
+    top: 12px;
   }
   50% {
-    background-color: #ed5565;
+    left: calc(100% - 22px);
+    top: calc(100% - 24px);
+  }
+  75% {
+    top: calc(100% - 24px);
+    left: 12px;
   }
   100% {
-    left: 650px;
+    left: 12px;
+    top: 12px;
   }
 }
 
-@keyframes circle2 {
+.circle2 .inner {
+  width: 100px;
+  height: 20px;
+  background: white;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-animation: circle10 10s linear forwards infinite;
+          animation: circle10 10s linear forwards infinite;
+}
+
+@-webkit-keyframes circle10 {
   0% {
-    left: 0%;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  24% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  49% {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
   }
   50% {
-    background-color: #ed5565;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  74% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  75% {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+  99% {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
   }
   100% {
-    left: 650px;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
   }
 }
 
-.circle3 {
-  -webkit-animation-name: circle2;
-          animation-name: circle2;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  position: absolute;
-  -webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
-          animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  margin: 0;
-  width: 100px;
-  height: 20px;
-  background: white;
-  border-radius: 10%;
-  bottom: 8px;
-}
-
-.circle2 {
-  -webkit-animation-name: circle2;
-          animation-name: circle2;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  position: absolute;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  margin: 0;
-  width: 100px;
-  height: 20px;
-  background: white;
-  border-radius: 10%;
-  top: 8px;
+@keyframes circle10 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  24% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  49% {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  74% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  75% {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+  99% {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
 }
 
 .border-fix {
@@ -4743,9 +4824,6 @@ form input:last-child {
     width: 100%;
     font-size: 6rem;
     text-align: center;
-  }
-  .circle3 {
-    display: none;
   }
   .circle2 {
     display: none;

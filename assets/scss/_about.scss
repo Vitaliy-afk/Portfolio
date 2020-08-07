@@ -102,71 +102,91 @@
 		padding: 20px;
 		width: 100%;
 	}
-	&.circle2 {
-		@keyframes circle2 {
-			0% {
-				left: 0%;
-			}
-			50% {
-				background-color: #ed5565;
-			}
-			100% {
-				left: 650px;
-			}
-		}
-	}
-	&.circle3 {
-		@keyframes circle2 {
-			0% {
-				left: 0%;
-			}
-			50% {
-				background-color: #ed5565;
-			}
-			100% {
-				left: 650px;
-			}
-		}
-	}
 }
-
-.circle3 {
-	animation-name: circle2;
-	animation-duration: 5s;
-	position: absolute;
-	animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-	animation-iteration-count: 2;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	margin: 0;
-	width: 100px;
-	height: 20px;
-	background: white;
-	border-radius: 10%;
-	bottom: 8px;
-	@include media('<1024px'){
-		display: none;
-	}
-	
-}
-
 
 .circle2 {
-	animation-name: circle2;
-	animation-duration: 5s;
+	animation: circle2 10s linear forwards infinite;
 	position: absolute;
-	animation-timing-function: linear;
-	animation-iteration-count: 3;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	margin: 0;
-	width: 100px;
-	height: 20px;
-	background: white;
-	border-radius: 10%;
+	left: 0;
+	right: auto;
+	width: 10px;
+	height: 10px;
+	background: black;
 	top: 8px;
 	@include media('<1024px'){
 		display: none;
+	}
+	@keyframes circle2 {
+		0% {
+			left: 8px;
+			top: 12px;
+		}
+		24% {
+			transform: rotate(0deg);
+		}
+		25% {
+			left: calc(100% - 22px);
+			top: 12px;
+		}
+		50% {
+			left: calc(100% - 22px);
+			top: calc(100% - 24px);
+			
+		}
+		75% {
+			top: calc(100% - 24px);
+			left: 12px;
+		}
+		100% {
+			left: 12px;
+			top: 12px;
+		}
+	}
+	.inner {
+		width: 100px;
+		height: 20px;
+		background: white;
+		border-radius: 10%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(0, -50%);
+		animation: circle10 10s linear forwards infinite;
+		@keyframes circle10 {
+			0% {
+
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+			24% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+			25% {
+
+				transform: translate(-50%, -50%) rotate(-90deg);
+			}
+			49% {
+				transform: translate(-50%, -50%) rotate(-90deg);
+			}
+			50% {
+
+				transform: translate(-50%, -50%) rotate(0deg);
+				
+			}
+			74% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+			75% {
+
+				transform: translate(-50%, -50%) rotate(90deg);
+			}
+			99% {
+				transform: translate(-50%, -50%) rotate(90deg);
+			}
+			100% {
+
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+		}
 	}
 	
 }
