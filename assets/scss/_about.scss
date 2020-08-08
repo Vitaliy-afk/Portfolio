@@ -131,7 +131,6 @@
 		50% {
 			left: calc(100% - 22px);
 			top: calc(100% - 24px);
-			
 		}
 		75% {
 			top: calc(100% - 24px);
@@ -154,36 +153,30 @@
 		animation: circle10 10s linear forwards infinite;
 		@keyframes circle10 {
 			0% {
-
 				transform: translate(-50%, -50%) rotate(0deg);
 			}
 			24% {
 				transform: translate(-50%, -50%) rotate(0deg);
 			}
 			25% {
-
 				transform: translate(-50%, -50%) rotate(-90deg);
 			}
 			49% {
 				transform: translate(-50%, -50%) rotate(-90deg);
 			}
 			50% {
-
 				transform: translate(-50%, -50%) rotate(0deg);
-				
 			}
 			74% {
 				transform: translate(-50%, -50%) rotate(0deg);
 			}
 			75% {
-
 				transform: translate(-50%, -50%) rotate(90deg);
 			}
 			99% {
 				transform: translate(-50%, -50%) rotate(90deg);
 			}
 			100% {
-
 				transform: translate(-50%, -50%) rotate(0deg);
 			}
 		}

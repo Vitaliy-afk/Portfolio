@@ -17,38 +17,40 @@
 	
 }
 
-.lgo {
+.bounce {
 	width: 50%;
 	padding: 0 15px;
+	@include media('<1023px'){
+        display: none;
+    }
 }
 
 
-.header {
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	@include media('<780px'){
-		visibility: hidden;
-		background: #181818;
-	}
+.header-columns {
+	display: flex;
+	flex-wrap: wrap;
+	background: #181818;
+	margin: 0 -15px;
+	position: relative;
 }
 
 
 .burger-wrap {
-	visibility: hidden;
+	position: relative;
+	text-align: center;
+	width: 100%;
     @include media('<780px'){
         width: 100%;
         display: inline-block;
 		visibility: visible;
     }
-    @include media('>1024px'){
+    @include media('>1023px'){
         display: none;
     }
     .burger-active & {
         @include media('<1024px'){
             opacity: 1;
-            // visibility: visible;
+            visibility: visible;
         }
     }
 }
@@ -89,8 +91,6 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	position: absolute;
-	top: 65%;
 	padding: 0 15px;
 	@include media('>=1024px'){
 		width: 50%;
@@ -99,11 +99,10 @@ header {
 		justify-content: flex-end;
 		padding: 0 15px;
 		position: static;
-		
 	}
 	@include media('<1024px'){
-		width: 90%;
-		padding: 0;
+		visibility: hidden;
+		opacity: 0;
 	}
 	.burger-active & {
 		@include media('<1024px'){
@@ -111,11 +110,14 @@ header {
         	top: 65%;
         	display: flex;
 			justify-content: space-around;
-			
+			width: 100%;
+			opacity: 1;
 		}
 		@include media('<1024px'){
 			visibility: visible;
-			width: 90%;
+			width: 100%;
+			position: absolute;
+			top: 100%;
 		}
 	}
 }
