@@ -783,9 +783,9 @@ th {
   position: relative;
 }
 
-.circle2 {
-  -webkit-animation: circle2 10s linear forwards infinite;
-          animation: circle2 10s linear forwards infinite;
+.rectangle {
+  -webkit-animation: rectangle 10s linear forwards infinite;
+          animation: rectangle 10s linear forwards infinite;
   position: absolute;
   left: 0;
   right: auto;
@@ -795,7 +795,7 @@ th {
   top: 8px;
 }
 
-@-webkit-keyframes circle2 {
+@-webkit-keyframes rectangle {
   0% {
     left: 8px;
     top: 12px;
@@ -822,7 +822,7 @@ th {
   }
 }
 
-@keyframes circle2 {
+@keyframes rectangle {
   0% {
     left: 8px;
     top: 12px;
@@ -849,7 +849,7 @@ th {
   }
 }
 
-.circle2 .inner {
+.rectangle .inner {
   width: 100px;
   height: 20px;
   background: white;
@@ -860,11 +860,11 @@ th {
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  -webkit-animation: circle10 10s linear forwards infinite;
-          animation: circle10 10s linear forwards infinite;
+  -webkit-animation: rectangle2 10s linear forwards infinite;
+          animation: rectangle2 10s linear forwards infinite;
 }
 
-@-webkit-keyframes circle10 {
+@-webkit-keyframes rectangle2 {
   0% {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
             transform: translate(-50%, -50%) rotate(0deg);
@@ -903,7 +903,7 @@ th {
   }
 }
 
-@keyframes circle10 {
+@keyframes rectangle2 {
   0% {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
             transform: translate(-50%, -50%) rotate(0deg);
@@ -4814,7 +4814,7 @@ form input:last-child {
     font-size: 6rem;
     text-align: center;
   }
-  .circle2 {
+  .rectangle {
     display: none;
   }
   .work-title {

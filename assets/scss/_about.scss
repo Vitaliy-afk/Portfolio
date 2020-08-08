@@ -104,8 +104,8 @@
 	}
 }
 
-.circle2 {
-	animation: circle2 10s linear forwards infinite;
+.rectangle {
+	animation: rectangle 10s linear forwards infinite;
 	position: absolute;
 	left: 0;
 	right: auto;
@@ -116,7 +116,7 @@
 	@include media('<1024px'){
 		display: none;
 	}
-	@keyframes circle2 {
+	@keyframes rectangle {
 		0% {
 			left: 8px;
 			top: 12px;
@@ -150,8 +150,8 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(0, -50%);
-		animation: circle10 10s linear forwards infinite;
-		@keyframes circle10 {
+		animation: rectangle2 10s linear forwards infinite;
+		@keyframes rectangle2 {
 			0% {
 				transform: translate(-50%, -50%) rotate(0deg);
 			}
