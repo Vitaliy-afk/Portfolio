@@ -29,7 +29,6 @@
 .header-columns {
 	display: flex;
 	flex-wrap: wrap;
-	background: #181818;
 	margin: 0 -15px;
 	position: relative;
 }
@@ -39,6 +38,7 @@
 	position: relative;
 	text-align: center;
 	width: 100%;
+	display: inline-block;
     @include media('<780px'){
         width: 100%;
         display: inline-block;
