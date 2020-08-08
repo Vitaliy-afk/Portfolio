@@ -78,7 +78,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -15px;
-  position: relative;
 }
 
 .burger-wrap {
@@ -4800,7 +4799,7 @@ form input:last-child {
     visibility: visible;
     width: 100%;
     position: absolute;
-    top: 100%;
+    top: 60%;
   }
   .text h1 {
     font-size: 1.5rem;
