@@ -206,7 +206,7 @@ a {
 .info-section {
   margin: 0 -15px;
   padding-top: 50px;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
 }
 
 .info-section .container {
@@ -727,7 +727,7 @@ th {
 }
 
 .about-section {
-  padding-bottom: 170px;
+  padding-bottom: 60px;
 }
 
 .about-section .container {
@@ -4732,10 +4732,6 @@ form input:last-child {
 }
 
 @media (min-width: 1281px) {
-  .info-section {
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
   .about-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4861,7 +4857,7 @@ form input:last-child {
     font-size: 10px;
   }
   .info-section {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top: 50px;
   }
   .text h1 {
@@ -4875,11 +4871,12 @@ form input:last-child {
     padding-bottom: 150px;
   }
   .profile-image img {
-    max-width: 100%;
+    max-width: 70%;
   }
   .profile-image {
     width: 100%;
     display: block;
+    text-align: center;
   }
   .about-section ul {
     font-size: 1.5rem;
