@@ -7,6 +7,7 @@
 		flex-wrap: wrap;
 		max-width: 1576px;
 		letter-spacing: -3px;
+		align-items: center;
 	}
 	@include media('<640px'){
 		padding-bottom: 50px;
@@ -17,7 +18,7 @@
 		padding-top: 50px;
 	}
 	@include media('<321px'){
-		padding-bottom: 65px;
+		padding-bottom: 50px;
 		padding-top: 50px;
 	}
 	@include media('<1280px'){
@@ -25,7 +26,7 @@
 		padding-top: 50px;
 	}
 	@include media('<481px'){
-		padding-bottom: 20px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -37,15 +38,14 @@
 	@include media('<360px'){
 		font-size: 1.2rem;
 		letter-spacing: 0.1px;
-		
 	}
-	@include media('<1024px'){
+	@include media('<=1024px'){
 		font-size: 1.5rem;
-		letter-spacing: 0.1px;
+		letter-spacing: .1px;
 	}
-	@include media('<640px'){
-		font-size: 1.5rem;
-		letter-spacing: 0.1px;
+	@include media('<=640px'){
+		font-size: 1.3rem;
+		letter-spacing: .1px;
 	}
 }
 
@@ -71,7 +71,10 @@ span.name {
 		width: 100%;
 		padding: 0 15px;
 		text-align: center;
-		padding-bottom: 150px;
+		padding-bottom: 50px;
+	}
+	@include media('>1280px'){
+		margin-top: -80px;
 	}
 }
 
@@ -81,10 +84,10 @@ span.name {
 	font-size: .8rem;
 	text-transform: uppercase;
 	@include media('<321px'){
-		font-size: 0.1rem;
+		font-size: .1rem;
 	}
 	@include media('<641px'){
-		font-size: 0.5rem;
+		font-size: .5rem;
 	}
 	@include media('>780px'){
 		font-size: .8rem;
@@ -100,10 +103,13 @@ span.name {
 	font-size: .8rem;
 	letter-spacing: 2px;
 	position: relative;
-	top: 80px;
+	top: 50px;
 	overflow: hidden;
 	transition: .5s;
 	display: inline-block;
+	@include media('<=680px'){
+		top: 20px;
+	}
 }
 
 
@@ -136,11 +142,13 @@ span.name {
 	border-radius: 10%;
 	border: 2px solid black;
 	box-shadow: 0 0px 100px black;
-	width: 100%;
-	max-height: 675px;
+	width: 60%;
 	max-width: 550px;
-		@include media('<640px'){
-		max-width: 70%;
+	@include media('<640px'){
+		width: 70%;
+	}
+	@include media('<=1024px'){
+		width: 80%;
 	}
 }
 

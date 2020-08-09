@@ -38,8 +38,9 @@ form input:last-child {
 	font-size: 10rem;
 	opacity: .1;
 	margin: 0;
+	padding-bottom: 50px;
 	@include media('<480px'){
-        padding-bottom: 10px;
+        padding-bottom: 50px;
     }
 }
 

@@ -1,5 +1,5 @@
 .skills {
-	padding-bottom: 60px;
+	padding-bottom: 50px;
 	@include media('<640px'){
 		padding-bottom: 30px;
 	}
@@ -7,7 +7,7 @@
 		padding-bottom: 15px;
 	}
 	@include media('<=1024px'){
-		padding-bottom: 45px;
+		padding-bottom: 50px;
 	}
 }
 

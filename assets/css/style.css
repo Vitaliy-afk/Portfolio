@@ -217,6 +217,9 @@ a {
       flex-wrap: wrap;
   max-width: 1576px;
   letter-spacing: -3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text h1 {
@@ -260,7 +263,7 @@ span.name {
   font-size: .8rem;
   letter-spacing: 2px;
   position: relative;
-  top: 80px;
+  top: 50px;
   overflow: hidden;
   -webkit-transition: .5s;
   -o-transition: .5s;
@@ -300,8 +303,7 @@ span.name {
   border: 2px solid black;
   -webkit-box-shadow: 0 0px 100px black;
           box-shadow: 0 0px 100px black;
-  width: 100%;
-  max-height: 675px;
+  width: 60%;
   max-width: 550px;
 }
 
@@ -752,7 +754,12 @@ th {
 }
 
 .about-section ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 -15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-section ul li {
@@ -952,7 +959,7 @@ th {
 }
 
 .skills {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .skills h1 {
@@ -4428,6 +4435,7 @@ form input:last-child {
   font-size: 10rem;
   opacity: .1;
   margin: 0;
+  padding-bottom: 50px;
 }
 
 /* Slider */
@@ -4598,7 +4606,7 @@ form input:last-child {
 }
 
 .work {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .work-title {
@@ -4606,7 +4614,7 @@ form input:last-child {
   font-size: 10rem;
   opacity: .1;
   margin: 0;
-  padding-bottom: 126px;
+  padding-bottom: 50px;
 }
 
 .item-content__mini-box {
@@ -4732,6 +4740,9 @@ form input:last-child {
 }
 
 @media (min-width: 1281px) {
+  .text {
+    margin-top: -80px;
+  }
   .about-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4760,8 +4771,23 @@ form input:last-child {
     padding-bottom: 50px;
     padding-top: 50px;
   }
+  .text h1 {
+    font-size: 1.5rem;
+    letter-spacing: .1px;
+  }
+  .profile-image img {
+    width: 80%;
+  }
+  .about-section h1,
+  .skills h1,
+  .work h1,
+  .contact h1 {
+    width: 100%;
+    font-size: 6rem;
+    text-align: center;
+  }
   .skills {
-    padding-bottom: 45px;
+    padding-bottom: 50px;
   }
 }
 
@@ -4797,18 +4823,6 @@ form input:last-child {
     position: absolute;
     top: 60%;
   }
-  .text h1 {
-    font-size: 1.5rem;
-    letter-spacing: 0.1px;
-  }
-  .about-section h1,
-  .skills h1,
-  .work h1,
-  .contact h1 {
-    width: 100%;
-    font-size: 6rem;
-    text-align: center;
-  }
   .rectangle {
     display: none;
   }
@@ -4837,6 +4851,12 @@ form input:last-child {
   }
 }
 
+@media (max-width: 680px) {
+  .text a {
+    top: 20px;
+  }
+}
+
 @media (max-width: 660px) {
   .about-me-info {
     min-height: 100px;
@@ -4847,8 +4867,12 @@ form input:last-child {
 }
 
 @media (max-width: 640px) {
+  .text h1 {
+    font-size: 1.3rem;
+    letter-spacing: .1px;
+  }
   .text p {
-    font-size: 0.5rem;
+    font-size: .5rem;
   }
 }
 
@@ -4860,18 +4884,14 @@ form input:last-child {
     padding-bottom: 50px;
     padding-top: 50px;
   }
-  .text h1 {
-    font-size: 1.5rem;
-    letter-spacing: 0.1px;
-  }
   .text {
     width: 100%;
     padding: 0 15px;
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
   .profile-image img {
-    max-width: 70%;
+    width: 70%;
   }
   .profile-image {
     width: 100%;
@@ -4900,7 +4920,7 @@ form input:last-child {
 
 @media (max-width: 480px) {
   .info-section {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
   .about-section {
     padding-bottom: 50px;
@@ -4936,7 +4956,7 @@ form input:last-child {
     width: 260px;
   }
   .contact h1 {
-    padding-bottom: 10px;
+    padding-bottom: 50px;
   }
 }
 
@@ -4960,11 +4980,11 @@ form input:last-child {
     font-size: 0.7rem;
   }
   .info-section {
-    padding-bottom: 65px;
+    padding-bottom: 50px;
     padding-top: 50px;
   }
   .text p {
-    font-size: 0.1rem;
+    font-size: .1rem;
   }
 }
 
